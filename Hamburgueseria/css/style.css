@@ -1,0 +1,859 @@
+@import url(reset.css); 
+@import url('https://fonts.googleapis.com/css?family=Handlee|Montserrat:400,700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes|Montserrat|Parisienne|Pinyon+Script&display=swap");
+
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Handlee', cursive;
+color rojo: #fa573a
+color azul: #21242e; 
+*/
+
+:root {
+    --main-color: #fa573a;
+  }
+  
+  .container{
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 3%;
+  }
+  
+  .container-fluid{
+      width: 100%;
+  }
+  
+  *{
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+  }
+  
+  
+  body{
+     font-family: 'Montserrat', 'Arial', sans-serif;
+     font-size: 1em;
+  }
+  /* Flotaciones */
+  .row:after{
+      clear: both;
+      content: "";
+      height:0 ;
+      display: block;
+  }
+  
+  img{
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+  
+  /* inicio header */
+  
+  header .nav_top{
+      background-color:#21242e;
+      color: white;
+      padding: 20px 0;
+  }
+  
+  header .nav_top .container div{
+      float: left;
+      width: 25%;
+  }
+  
+  header .nav_top a{
+      color: white;
+      text-decoration: none;
+      font-size: 150%;
+  }
+  
+  header .nav_top a span{
+      display: none;
+  }
+  
+  header .nav_top a i{
+      color:var(--main-color);
+  }
+  
+  header .nav_top .container div:nth-child(3), header .nav_top .container div:last-child{
+      text-align: right;
+  }
+  
+  /* Inicio nav */
+  
+  header nav{
+      padding: 20px 3%;
+  }
+  
+  header .hamburguesa{
+      cursor: pointer;
+      float: right;
+  }
+  
+  header .hamburguesa div{
+      border-top: 2px solid #aaa;
+      width: 1.875em;
+      margin-bottom: 0.625em;
+      
+  }
+  
+  header nav .logo{
+      float: left;
+      width: 100px;
+  }
+  
+  header nav .menu{
+      padding-top: 60px;
+  }
+  
+  header nav .menu li{
+      padding:  1.250em;
+      text-align: center;
+      border-bottom: 1px solid #aaa;
+  }
+  header nav .menu li:last-child{
+      border: 0px;
+  }
+  
+  header nav .menu li a{
+      color: #aaa;
+      text-decoration: none;
+      display: block;
+  }
+  
+  header nav .menu li a.activo, header nav .menu li a:hover{
+      color: #fa573a;
+  } 
+  
+  /* INICIO HERO */
+  
+  .hero{
+      background-image: url('../images/fondo.jpg');
+      height: 37em;
+      background-size: cover;
+      background-position: center center;
+      background-color: #777;
+      background-blend-mode: multiply;
+  }
+  
+  .hero>div{
+      color: white;
+      padding: 15% 3%;
+  }
+  
+  .hero h1{
+      font-size: 2.5em;
+      font-family: 'Handlee', cursive;    
+  }
+  
+  .hero h2{
+      color: #fa573a;
+      font-size: 1.5em;
+      margin: 1em 0;
+  }
+  
+  .hero p{
+      font-size: 1.15em;
+  }
+  
+  .boton{
+      display: inline-block;
+      background-color: #fa573a;
+      padding: 1.15em;
+      color: white;
+      text-decoration: none;
+      margin: 1em 0;
+      border: 1px solid #fa573a;
+  }
+  
+  .boton:hover{
+      background-color: transparent;
+      color: #fa573a;
+  }
+  
+  .boton:hover i{
+      transform: translateX(5px);
+      transition: transform 1s;
+  }
+  
+  .hero .social li{
+      display: inline-block;
+      font-size: 2em;
+      margin-right: 1em;
+  }
+  
+  .hero .social li a{
+      color: white;
+      text-decoration: none;
+  }
+  
+  /* MAIN */
+  main section.container{
+      padding-top: 2.125em;
+      padding-bottom: 2.125em;
+  }
+  
+  main section h2{
+      color: black;
+      font-family: 'Handlee', cursive;
+      font-size: 2em;
+      text-align: center;
+  }
+  
+  main section h2 span{
+      color: #fa573a;
+  }
+  
+  main section .underline{ 
+      position: relative;
+      width: 115px;
+      margin: 0 auto;
+  }
+  main section .underline hr{
+      border-color: #fa573a;
+      position: absolute;
+      width: 100%;
+      top: -1px;
+  }
+  
+  main section .underline span{
+      display: block;
+      text-align: center;
+      color: #fa573a;
+      font-weight: 700;
+  }
+  
+  main section .flex{
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  main section .flex article{
+      width: 100%;
+      padding: 1.825em 0;
+      border-bottom: 1px solid #aaa;
+  }
+  
+  main section .flex article:last-child{
+      border-bottom: 0px;
+  }
+  
+  main section article div i{
+      color: #fa573a;
+      font-size: 2em;
+      border: 2px solid #fa573a;
+      padding: .8rem;
+  }
+  
+  main section article div .fa-truck{
+      transform: rotateY(180deg);
+  }
+  
+  main section article h3{
+      font-weight: 700;
+      margin: 1em 0;
+  }
+  
+  
+  main section .enlace{
+      text-decoration: none;
+      color: #fa573a;
+      margin-top: 1em;
+      display: block;
+  }
+  
+  main section .enlace:hover i{
+      margin-left: 10px;
+      transition: .5s;
+  }
+  
+  main section .columna{
+      width: 100%;
+      padding: 1.25em 0;
+  }
+  
+  main section .imagen{
+      width: 85%;
+      margin: 0 auto;
+  }
+  
+  main section .imagen .marco{
+      border: 3px solid #fa573a;
+      background-color: transparent;
+      transform: rotateZ(10deg);
+      transition: 1s;
+  }
+  
+  main section .imagen .marco img{
+      transform: rotateZ(-10deg);
+       transition: 1s;
+  }
+  
+  main section .imagen:hover .marco, main section .imagen:hover img{
+      transform: rotateZ(0deg);
+  }
+  
+  main section h3{
+      font-weight: 700;
+  }
+  
+  main section h4{
+      margin: 0.5em 0;
+      color: #fa573a;
+  }
+  
+  footer{
+      background-color: #21242e;
+      padding: 1.825em 0;
+  }
+  
+  footer p{
+      color: white;
+  }
+  
+  footer a{
+      color: white;
+      text-decoration: none;
+  }
+  
+  @media(min-width: 48.063em)
+  {
+      header .nav_top a span{
+          display: inline;
+          font-size: 70%;
+      }
+  
+  
+      main section .flex article{
+          width: 50%;
+          padding: 1.825em 1em;
+          border-bottom: 0px;
+          border-left: 1px solid #aaa;
+          margin-bottom:1em;
+      }
+  
+      main section .flex article:last-child{
+          width: 100%;
+      }
+  
+      main section .underline{
+          margin-bottom: 2em;
+      }
+      .carta .flex article {
+        width: 100%;
+    }
+    .carta .container .flex-carta .menu .flex-elemento {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .carta .container .flex-carta .carta .flex-item .foto {
+        width: 40%;
+    }
+
+    .carta .container .flex-carta .carta .flex-item .texto {
+        width: 60%;
+        padding: 0px 2%;
+    }
+  
+  }
+  
+  @media(min-width: 62.750em){
+  
+      header .hamburguesa{
+          display: none;
+          float: none;
+      }
+  
+      header nav .menu{
+          padding-top: 0px;
+          float: right;
+      }
+  
+      header nav .menu li{
+          display: inline-block;
+          padding: 0.5em 1.250em;
+          text-align: left;
+          border-bottom: 0px;
+      }
+  
+      header nav .menu li:last-child{
+          padding-right: 0;
+      }
+  
+  
+      main section .columna{
+          width: 50%;
+          padding: 1.25em 1em;
+      }
+      main section .flex .columna {
+        width: 50%;
+        padding: 2em;
+    }
+    .carta .flex {
+        flex-direction: row;
+    }
+    .carta .flex>.columna:first-child {
+        padding-top: 1.5em;
+        width: 25%;
+    }
+    .carta .flex>.columna:last-child {
+        width: 75%;
+        padding-left: 3rem;
+    }
+    .carta .flex section article.comida {
+       
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 1.5em 0 1.5em 1.5em;
+        border: none;
+        margin-bottom: 0;
+
+    }
+        
+        
+    article.comida .imagenplato {
+        width: 30%;
+        height: 100%;
+    }
+
+    article.comida .texto {
+        width: 70%;
+        padding: 0;
+        margin-left: 2em;
+    }
+    article.comida .texto h3 {
+        min-height: 3em;
+    }
+    article.comida .texto .enlace {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    article.comida h3 span.precio {
+        margin-left: 1em;
+        color: #da573a;
+    }
+    
+    .flex article.meal:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+  @media(min-width: 75.0625em )
+  {
+        main section .flex article{
+          width: 33.33%;
+          
+        }  
+  
+        main section .flex article:last-child{
+          width: 33.33%;
+       }
+     
+       .hero>div{
+          color: white;
+          padding: 7% 3%;
+          max-width: 1100px;
+          margin: 0 auto;
+      }
+
+   
+      .carta .flex section article.comida {
+        width: 100%;
+    }
+    article.comida.imagenplato
+     {
+        
+        width: 30%;
+        height: 100%
+    }
+    article.comida .texto {
+        width: 75%;
+        padding: 0;
+        margin-left: 2em;
+    }
+    article.comida .texto h3 {
+        min-height: auto;
+    }
+
+    .carta .container .flex-carta .carta .flex-item .texto .flex-elemento-titulo {
+        flex-wrap: nowrap;
+    }
+  
+  }
+
+
+
+/*Blog Seccion*/
+main .flex article.articulo {
+    border-left: none;
+    
+}
+
+.contenedorImagen {
+    position: relative;
+    
+}
+
+.contenedorImagen{
+    color:#fa573a;
+    font-weight: bold;
+}
+
+.contenedorImagen .fecha p{
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fa573a;
+    color: #aaa;
+    padding: .75em 1em;
+    font-weight: bold;
+    
+  }
+  
+  /*Menu del dia*/
+  
+main.carta {
+    background: #21242e;
+    color: #fafafa;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+  h2.cartadehoy {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1.5em;
+    color:white;
+
+}
+
+main section article p {
+    text-align:justify;
+}
+
+h2.cartadehoy span {
+    color: #da573a;
+}
+
+
+main .flex article {
+    margin-bottom: 1em;
+    
+}
+
+.carta.flex.contenidoMenu{
+
+    width: 100%;
+
+}
+
+main.carta .menulista li {
+        margin-bottom: 1.5em;
+        
+    }
+     
+main.carta .menulista a{
+    display: block;
+    padding: 1em;
+    border-radius: .2em;
+    text-decoration: none;
+    color: #fafafa;
+    background-color: transparent;
+    transition:.5s;
+}
+
+main.carta .menulista a.active {
+    background: #fa573a;
+    }
+   
+main.carta .menulista a:hover, main.carta .menulista a:visited:hover {
+        background: #da573a;
+    }
+    .menudeldia.flex{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+     
+    }
+         
+   
+/*Ofertas*/
+
+section.ofertas h3 {
+    font-size: 1.5 rem;
+    font-weight: bold;
+    
+    }
+   
+section.ofertas hr {
+    margin-left: 0;
+    width: 7em;
+    border-color:#fa573a;
+    position: relative;
+    left: 0;
+    margin: 1rem 0 1rem 0;
+}
+
+
+section.ofertas p {
+    position: relative;
+    
+  
+}
+
+.ofertadehoy {
+    position: relative;
+    width: 100px;
+}
+
+.ofertadehoy hr {
+    position: absolute;
+    width: 100%;
+    border-color: #FA573A;
+}
+comida
+
+
+.carta .container .flex-carta .carta .flex-item .texto  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carta .container .flex-carta .menu .flex-elemento .texto .flex-elemento-titulo h4 {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 20px 0px;
+
+}
+
+.carta .container .flex-carta .carta .flex-item .texto .flex-item-titulo p {
+    color: #FA573A;
+    font-weight: 700;
+    padding: 16px 0px;
+    text-align: right;
+}
+
+.carta .container .flex-carta .menu .flex-elemento .texto .enlace {
+    display: inline-block; 
+    color: #FA573A;
+    margin: 1em 0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.carta .container .flex-carta .carta .flex-elemento .texto .enlace i {
+    margin-left: 3px;
+}
+
+.carta .container .flex-carta .menu .flex-elemento .texto .enlace:hover i {
+    transform: translateX(5px);
+    transition: 1s;
+}
+
+.carta .container .flex-carta .menu .flex-elemento {
+    padding: 30px 0px;
+}
+
+.carta .container .flex-carta .menu .flex-elemento .foto a img {
+    margin: 1px;
+}
+
+.carta .container .flex-carta .menu .flex-elemento .foto a:hover img {
+    outline: 1px solid yellow;
+}
+/* Comida */
+
+.carta.flex {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    flex-flow: row wrap;
+    margin-top: 2em;
+    
+}
+
+    /*Menu del dia
+  main.carta {
+    background: #21242e;
+    color: #fafafa;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+*/
+   
+}
+
+
+
+.carta.flex .columna {
+    width: 100%;
+}
+
+.carta .flex section article.comida {
+    border: none;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: right;
+}
+
+.carta .flex section article.comida >* {
+    margin-bottom: 0;
+}
+
+article.comida .imagenplato {
+    overflow: hidden; 
+    width: 25%;
+}
+
+
+
+article.comida h4 {
+    font-size: 1.25rem;
+    color: #fafafa;
+    text-align: left;
+}
+
+
+article.comida h3 span.precioplato {
+    margin-left: 1em;
+    color: #da573a;
+}
+.flex article.comida:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+
+}
+
+
+main .flex article {
+    width: 33.33%;
+ }
+ main .flex article:last-child {
+    width: 33.33%;
+ }
+ .menu.flex section article.comida {
+    width: 100%;
+ }
+ 
+ article.comida .texto {
+    width: 75%;
+    padding: 0;
+    margin-left: 2em;
+ }
+ article.comida .texto  {
+    min-height: auto;
+ }
+
+ 
+
+ /*Botón arriba*/
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+a.arriba {
+    position: absolute;
+    right: .5em;
+    bottom: .5em;
+    display: inline-block;
+    color:  #aaa;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1em;
+    background: #fa573a;
+    border-radius: .2em;
+}
+
+a.arriba i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+    
+    
+
+        
+        
+      
+       
+
+       
+      
+
+    
+    
+

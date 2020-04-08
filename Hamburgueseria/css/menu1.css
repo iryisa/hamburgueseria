@@ -1,0 +1,394 @@
+.carta.flex.contenidoMenu{
+
+    width: 100%;
+
+}
+
+
+  main .flex article {
+    width: 33.33%;
+ }
+ main .flex article:last-child {
+    width: 33.33%;
+ }
+
+
+  .carta .flex section article.comida {
+    width: 100%;
+}
+article.comida.imagenplato
+ {
+    
+    width: 30%;
+    height: 100%
+}
+article.comida .texto {
+    width: 75%;
+    padding: 0;
+    margin-left: 2em;
+}
+article.comida .texto h3 {
+    min-height: auto;
+}
+
+.carta .container .flex-carta .carta .flex-item .texto .flex-elemento-titulo {
+    flex-wrap: nowrap;
+}
+
+}
+
+
+
+
+
+  main section .columna{
+          width: 50%;
+          padding: 1.25em 1em;
+      }
+      main section .flex .columna {
+        width: 50%;
+        padding: 2em;
+    }
+    
+main.carta {
+    background: #21242e;
+    color: #fafafa;
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: 3em;
+    padding-right: 3em;
+    margin: 0 auto;
+    margin-top: 1.5em;
+}
+
+  .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+    
+}
+  h2.cartadehoy {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 1.5em;
+    color:white;
+}
+
+main section article {
+    margin-bottom: 1.5em;
+}
+
+main section article p {
+    text-align:justify;
+}
+
+h2.cartadehoy span {
+    color: #da573a;
+}
+
+
+
+
+main.carta .menulista li {
+        margin-bottom: 1.5em;
+        
+    }
+    article.comida h3 {
+        font-size: 1.25rem;
+        color: #fafafa;
+        text-align: left;
+    }
+    
+    article.comida h3 span.precio {
+        margin-left: 1em;
+        color: #da573a;
+    }
+    
+    .flex article.meal:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+
+    .carta .flex {
+        flex-direction: row;
+    }
+    .carta .flex>.columna:first-child {
+        padding-top: 1.5em;
+        width: 25%;
+    }
+    .carta .flex>.columna:last-child {
+        width: 75%;
+        padding-left: 3rem;
+    }
+    .carta .flex section article.comida {
+       
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        padding: 1.5em 0 1.5em 1.5em;
+        border: none;
+        margin-bottom: 0;
+
+    }
+        
+        
+    article.comida .imagenplato {
+        width: 30%;
+        height: 100%;
+    }
+
+    article.comida .texto {
+        width: 70%;
+        padding: 0;
+        margin-left: 2em;
+    }
+    article.comida .texto h3 {
+        font-size: 1.25rem;
+      color: #fafafa;
+       text-align: left;
+    }
+    article.comida .texto .enlace {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    article.comida h3 span.precio {
+        margin-left: 1em;
+        color: #da573a;
+    }
+    
+    .flex article.meal:last-child {
+        margin-bottom: 0;
+        border-bottom: none;
+    
+ 
+ main.carta .menulista a.active {
+    background: #fa573a;
+    }
+   
+ main.carta .menulista a:hover, main.carta .menulista a:visited:hover {
+        background: #da573a;
+    }
+    .menudeldia.flex{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+     
+    }
+         
+   
+/*Ofertas*/
+
+section.ofertas h3 {
+    font-size: 1.5 rem;
+    font-weight: bold;
+    
+    }
+   
+
+
+
+section.ofertas hr {
+    margin-left: 0;
+    width: 7em;
+    border-color:#fa573a;
+    position: relative;
+    left: 0;
+    margin: 1rem 0 1rem 0;
+}
+
+
+section.ofertas p {
+    position: relative;
+    
+  
+}
+
+.ofertadehoy {
+    position: relative;
+    width: 100px;
+}
+
+.ofertadehoy hr {
+    position: absolute;
+    width: 100%;
+    border-color: #FA573A;
+}
+comida
+
+
+.carta .container .flex-carta .carta .flex-item .texto  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carta .container .flex-carta .menu .flex-elemento .texto .flex-elemento-titulo h4 {
+    font-size: 1em;
+    font-weight: 700;
+    padding: 20px 0px;
+
+}
+
+.carta .container .flex-carta .carta .flex-item .texto .flex-item-titulo p {
+    color: #FA573A;
+    font-weight: 700;
+    padding: 16px 0px;
+    text-align: right;
+}
+
+.carta .container .flex-carta .menu .flex-elemento .texto .enlace {
+    display: inline-block; 
+    color: #FA573A;
+    margin: 1em 0;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.carta .container .flex-carta .carta .flex-elemento .texto .enlace i {
+    margin-left: 3px;
+}
+
+.carta .container .flex-carta .menu .flex-elemento .texto .enlace:hover i {
+    transform: translateX(5px);
+    transition: 1s;
+}
+
+.carta .container .flex-carta .menu .flex-elemento {
+    padding: 30px 0px;
+}
+
+/* Para que el borde no afecte a la imagen y no haga efecto raro al pasar el ratón */
+.carta .container .flex-carta .menu .flex-elemento .foto a img {
+    margin: 1px;
+}
+
+.carta .container .flex-carta .menu .flex-elemento .foto a:hover img {
+    outline: 1px solid yellow;
+}
+/* Comida */
+
+
+.carta.flex {
+    display: inline-block;
+    width: 90%;
+    margin: auto;
+    flex-flow: row wrap;
+    margin-top: 2em;
+    
+    
+   
+}
+
+
+.carta.flex .contenidoMenu{
+    width: 100%;
+}
+
+.carta .flex section article.comida {
+    border: none;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    
+}
+
+.carta .flex section article.comida >* {
+    margin-bottom: 0;
+}
+
+article.comida .imagenplato {
+    overflow: hidden; 
+    width: 25%;
+}
+
+
+
+article.comida h4 {
+    font-size: 1.25rem;
+    color: #fafafa;
+    text-align: left;
+}
+
+
+article.comida h3 span.precioplato {
+    margin-left: 1em;
+    color: #da573a;
+}
+.flex article.comida:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+
+}
+
+
+
+ .menu.flex section article.comida {
+    width: 100%;
+ }
+ 
+ article.comida .texto {
+    width: 75%;
+    padding: 0;
+    margin-left: 2em;
+ }
+ article.comida .texto  {
+    min-height: auto;
+ }
+
+ 
+
+ /*Botón arriba*/
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+a.arriba {
+    position: absolute;
+    right: .5em;
+    bottom: .5em;
+    display: inline-block;
+    color:  #aaa;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: 1em;
+    background: #fa573a;
+    border-radius: .2em;
+}
+
+a.arriba i {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
